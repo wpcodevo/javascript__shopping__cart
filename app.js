@@ -70,7 +70,7 @@ class UI {
     buttonDOM = buttons;
     buttons.forEach(button => {
       const id = button.dataset.id;
-      const inCart = cart.find(item => item.id === id);
+      const inCart = cart.find(item => item.id === parseInt(id, 10));
 
       if (inCart) {
         button.innerText = "In Cart";
