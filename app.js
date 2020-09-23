@@ -171,6 +171,7 @@ class UI {
     // Clear Cart
     clearCartBtn.addEventListener("click", () => {
       this.clearCart();
+      this.hide();
     });
 
     // Cart Functionality
